@@ -1,0 +1,169 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #151515;
+	color: #dfdfdf;
+}
+.header {
+	width: 100%;
+	background: #000045;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 0px 8px skyblue;
+}
+.header h1 {
+	font-family: scp-reg;
+	font-size: 3vh;
+	color: #dfdfdf;
+}
+.main {
+	padding-top: 14vh;
+	text-align: center;
+}
+.main img {
+	width: 20vh;
+	height: 20vh;
+	border: 2px solid darkblue;
+	border-radius: 50%;
+}
+.main h3 {
+	font-family: pc-reg;
+	letter-spacing: 2px;
+	font-size: 2.5vh;
+	margin: 1vh 0vh 0vh 0vh;
+	padding: 0vh;
+}
+.main p {
+	font-family: b-reg;
+	font-size: 1.5vh;
+	padding: 0vh;
+	margin: 0vh;
+	animation: letter-spc 2s ease;
+}
+.main .groupInfo {
+	margin: 0vh 5vh;
+	font-family: helvetica;
+	font-size: 1.5vh;
+}
+.main fieldset {
+	border: 0;
+	margin: 4vh 4em;
+}
+.main legend {
+	font-family: cd-reg;
+	font-weight: bold;
+	font-size: 2vh;
+}
+.main .groupDesc {
+	text-align: left;
+	background: #252525;
+	border-radius: 2px;
+	padding: 1vh;
+	box-shadow: 0px 2px 4px cyan;
+}
+.groupDesc p,li,b,i {
+	font-family: b-reg;
+	font-size: 1.5vh;
+	margin: 0;
+}
+.groupDesc i {
+	color: #FF3000;
+}
+.groupDesc ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 2vh;
+}
+.groupDesc a {
+	text-decoration: none;
+	color: cyan;
+}
+.main button {
+	font-family: b-reg;
+	margin: 3vh 0vh 0vh 0vh;
+	background: #22003A;
+	animation: fontcolor 3s infinite;
+}
+.groupInfo {
+	margin: 0;
+	padding: 2px;
+} 
+.groupInfo th {
+	background: maroon;
+}
+.groupInfo td {
+	background: #000030;
+}
+.groupInfo p {
+	text-align: center;
+}
+.main #joinGroup {
+	background: #000000;
+	color: white;
+	font-family: scp-reg;
+	padding: 1vh;
+	text-decoration: none;
+	animation: bordfade 2s ease infinite;
+}
+#joinGroup:hover {
+	background: skyblue;
+	border-radius: 1vh;
+	box-shadow: 0px 2px 6vh skyblue;
+	animation: bord 2s ease infinite;
+}
+.copyright {
+	margin-top: 4vh;
+}
+.copyright p {
+	color: #ababab;
+	font-family: arial;
+	font-size: 1.5vh;
+	margin: 0;
+	padding: 0;
+}
+.copyright #credits {
+	color: #ababab;
+	font-family: arial;
+	font-size: 0.8vh;
+	padding: 1px;
+}
+/*font face*/
+@font-face {
+	font-family: scp-reg;
+	src: url('font/scp-reg.ttf') format('truetype');
+}
+@font-face {
+	font-family: pc-reg;
+	src: url('font/pc-reg.ttf') format('truetype');
+}
+@font-face {
+	font-family: cd-reg;
+	src: url('font/cd-reg.ttf') format('truetype');
+}
+@font-face {
+	font-family: b-reg;
+	src: url('font/b-reg.otf') format('truetype');
+}
+/*keyframes*/
+@keyframes bordfade {
+	0%{border: 2px solid skyblue;}
+	50%{border: 2px solid black;}
+	100%{border: 2px solid skyblue;}
+}
+@keyframes bord {
+	0%{border: 2px solid skyblue;}
+	100%{border: 2px solid skyblue;}
+}
+@keyframes fontcolor {
+	0%{color: purple;}
+	25%{color: blue;}
+	50%{color: cyan;
+	75%{color: green;}
+	100%{color: purple;}
+}
+@keyframes letter-spc {
+	0%{letter-spacing: 5px;}
+	100%{letter-spacing: 2px;}
+}
